@@ -26,7 +26,6 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
@@ -59,11 +58,9 @@ $(function() {
     //      * hiding/showing of the menu element.
     //      */
          it('is hidden', function() {
-            // var result = element[0].querySelectorAll('.menu-hidden');
-            // expect(angular.element(result).hasClass('menu-hidden'));
-            // expect($('menu-hidden')[0]).toBeInDOM();
             expect($('body').hasClass('menu-hidden')).toBe(true);
          });
+
     //      /* TODO: Write a test that ensures the menu changes
     //       * visibility when the menu icon is clicked. This test
     //       * should have two expectations: does the menu display when
@@ -77,6 +74,7 @@ $(function() {
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
     });
+
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function() {
         /* TODO: Write a test that ensures when the loadFeed
